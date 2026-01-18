@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    border: 10px solid black;
+    font-size: 6rem;
+    font-weight: bolder;
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+}
