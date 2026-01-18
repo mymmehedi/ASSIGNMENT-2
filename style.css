@@ -1,11 +1,101 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+body{
+    margin: 0;
+}
+.nav-container{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1A0B2E;
+    border-bottom: 1px solid #9100f848;
+}
+
+.nav-icon{
+    color: #ffffff;
+    width: 219px;
+}
+
+.icon-wave{
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background-clip: text;
+    color: transparent;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn{
+    padding: 12px 1rem;
+    border: none;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ffffff;
+    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient( #F7E93F,#FB09B4, #9100F8);
+}
+
+.btn-2{
+    padding: 12px 1rem;
+    border: 2px solid #00FF88;
+    border-radius: 1.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #00FF88;
+    background-color: transparent;
+}
+#banner{
+    background-image: url(assets/hero-bg.png);
+    height: 900px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.banner-container{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    background-image: url(assets/hero-circle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: top 125px;
+    background-size:400px auto;
+    color: #ffffff;
 }
-h1{
-    border: 10px solid black;
-    font-size: 6rem;
+
+.banner-container img{
+    width: 150px;
+    height: 220px;
+    padding-top: 200px;
+}
+.banner-container h1{
+    font-size: 60px;
     font-weight: bolder;
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    padding-top: 130px;
+    line-height: normal;
+    margin: 0;
+}
+
+.banner-container p {
+    padding-bottom: 20px;
 }
