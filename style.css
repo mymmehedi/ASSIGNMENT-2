@@ -109,7 +109,8 @@ body{
 }
 
 .about-container{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     padding-top: 50px;
     padding-left: 200px;
@@ -148,4 +149,59 @@ body{
 
 .achivement h2{
     color: #00FF88;
+}
+
+#choose-bg{
+    background-color: #230E3D;
+    padding: 120px 200px;
+}
+.choose-container{
+    color: #ffffff;
+    margin: 120px auto;
+    max-width: 1200px;
+
+}
+.choose-container h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+.choose-box div h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.choose-box div{
+    border-radius: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #351165;
+}
+.choose-box div img{
+    width: 60px;
+    height: 60px;
+}
+.choose-box{ 
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+}
+
+.big-layout{
+    padding-top: 180px;
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.normal-layout{
+    padding-top: 50px;
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.small-layout{
+    padding-top: 50px;
+    grid-column: span 1;
+    grid-row: span 1;
 }
