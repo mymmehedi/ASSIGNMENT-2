@@ -237,3 +237,39 @@ body{
 .Featured-card .time{
     color: #00FF88;
 }
+.meet-host{
+    display: flex;
+    gap: 24px;
+    color: #ffffff;
+    margin: 120px auto;
+    max-width: 1200px;
+    padding: 50px;
+    border-radius: 40px;
+    background-color: #351165;
+}
+.meet-the-host h2{
+    margin-bottom: -50px;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.about-host h3{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about-host .social{
+    display: flex;
+    gap: 24px;
+    height: 50px;
+    
+}
+
+.about-host .social img{
+    border: .5px solid #533C72;
+    padding: 10px;
+    border-radius: 40px;
+}
