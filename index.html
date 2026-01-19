@@ -21,9 +21,16 @@
                 </ul>
             </div>
             <div>
-                <button  class="btn">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                <button  class="btn Subscribe">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             </div>
         </nav>
+        <script>
+            let menu = document.getElementById("menulist")
+            menu.style.maxHeight = "0px";
+        </script>
         <section id="banner">
             <div class="banner-container">
                 <div class="icon-circle">
