@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400px;
+  font-weight: <weight>;
   font-style: normal;
 }
 
@@ -25,7 +26,7 @@ body{
 }
 
 .icon-wave{
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background: linear-gradient(to bottom left, #9100F8, #FB09B4, #F7E93F);
     background-clip: text;
     color: transparent;
 }
@@ -48,11 +49,13 @@ body{
     font-weight: 600;
     font-size: 1rem;
     color: #ffffff;
-    background: linear-gradient(#9100F8, #FB09B4, #F7E93F);
+    background: linear-gradient(to bottom left,#9100F8, #FB09B4, #F7E93F);
     cursor: pointer;
+    position: relative;
+    transition: 3s linear;
 }
 .btn:hover{
-    background: linear-gradient( #F7E93F,#FB09B4, #9100F8);
+    background: linear-gradient(to bottom right,#9100F8, #FB09B4, #F7E93F);
 }
 
 .btn-2{
@@ -64,6 +67,7 @@ body{
     color: #00FF88;
     background-color: transparent;
     cursor: pointer;
+    transition: 3s linear;
 }
 .btn-2:hover{
     border-color: purple;
@@ -141,7 +145,8 @@ body{
     line-height: 30px;
 }
 .achivement{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     gap: 100px;
     font-weight: bold;
     padding-top: 80px;
@@ -305,3 +310,5 @@ body{
     font-size: 60px;
     margin-bottom: 2rem;
 }
+
+@media screen and ()
