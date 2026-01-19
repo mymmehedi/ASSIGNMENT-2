@@ -273,3 +273,35 @@ body{
     padding: 10px;
     border-radius: 40px;
 }
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-image: url(assets/footer-bg.png);
+    background-repeat: no-repeat;
+    padding: 120px;
+    background-size: 100% auto;
+    position: relative;
+    text-align: center;
+}
+.footer-container ul{
+    display: flex;
+    gap: 40px;
+}
+.footer-container ul li{
+    list-style: none;
+    
+}
+.footer-container ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    justify-content: space-evenly;
+
+}
+.footer-tittle{
+    display: flex;
+    font-size: 60px;
+    margin-bottom: 2rem;
+}
