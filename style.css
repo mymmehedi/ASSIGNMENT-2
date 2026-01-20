@@ -61,7 +61,14 @@ body{
     text-decoration: none;
     color: #ffffff;
 }
-
+@keyframes popup {
+    from{
+        top: 300px;
+    }
+    to{
+       top: 100px;
+    }
+}
 .btn{
     padding: 12px 1rem;
     border: none;
@@ -73,6 +80,7 @@ body{
     cursor: pointer;
     position: relative;
     transition: all 1s linear;
+    animation: popup 2s ease-in-out 0 infinite alternate;
 }
 .btn:hover{
     background: linear-gradient(to bottom right,#9100F8, #FB09B4, #F7E93F);
@@ -115,10 +123,17 @@ body{
     color: #ffffff;
 }
 
+
 .banner-container img{
     width: 150px;
     height: 220px;
     padding-top: 200px;
+    transition: transform 2s linear;
+}
+
+.banner-container img:hover{
+    transform: rotatey(180deg);
+
 }
 .banner-container h1{
     font-size: 60px;
@@ -294,9 +309,9 @@ body{
 }
 
 .about-host .social img{
-    border: .5px solid #533C72;
+    border: 1px solid #533C72;
     padding: 10px;
-    border-radius: 40px;
+    border-radius: 1000px;
 }
 .footer-container{
     display: flex;
